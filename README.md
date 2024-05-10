@@ -29,7 +29,7 @@ In this CICD pipeline we are going to publish docker images we will use Jenkins 
 - After that we have to Add Jenkins user to docker group ‘usermod -a -G docker jenkins’
 
 - On AWS console create iam user create access key and secret access key and attach policy to this user to have container registry full access and ecs full 
-  access permission and store these credentials in jenkins
+  access permission 
 
 - On Jenkins now time to install docker pipeline, amazon ECR, AWS sdk, cloudbees docker and pipeline AWS steps  plugins
 
