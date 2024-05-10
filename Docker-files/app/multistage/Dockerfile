@@ -1,7 +1,7 @@
 FROM openjdk:11 AS BUILD_IMAGE
 RUN apt update && apt install maven -y
 RUN git clone https://github.com/moaf92/CICD-Jenkins-Docker-ECS.git
-RUN cd vprofile-project && git checkout docker && mvn install
+RUN cd CICD-Jenkins-Docker-ECS && git checkout docker && mvn install
 
 FROM tomcat:9-jre11
 
