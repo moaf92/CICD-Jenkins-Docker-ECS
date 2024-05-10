@@ -4,7 +4,6 @@
 # Prerequisites
  
 - Install AWS cli and docker engine on the machine of Jenkins 
-- Store AWS credentials in Jenkins
 - Create ECR repo
 - Create ECS cluster and service
 - Install ECR, docker pipeline and AWS sdk for credentials plugins
