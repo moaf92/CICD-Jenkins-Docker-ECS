@@ -1,6 +1,6 @@
-FROM openjdk:11 AS BUILD_IMAGE
+ROM openjdk:11 AS BUILD_IMAGE
 RUN apt update && apt install maven -y
-RUN git clone -b vp-main https://github.com/moaf92/CICD-Jenkins-Docker-ECS.git
+RUN git clone https://github.com/moaf92/CICD-Jenkins-Docker-ECS.git
 RUN cd CICD-Jenkins-Docker-ECS && git checkout docker && mvn install
 
 FROM tomcat:9-jre11
